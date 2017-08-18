@@ -23,7 +23,7 @@ class Kibana < Formula
   def install
     resource("node").stage do
       system "./configure", "--prefix=#{libexec}/node"
-      system "make", "test"
+      #system "make", "test"
       system "make", "install"
     end
 
